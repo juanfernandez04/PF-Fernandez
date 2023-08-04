@@ -14,14 +14,27 @@ li {
     list-style: none;
 }
 
-.titulo{
+@keyframes input {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.titulo {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
     color: #3e3eca;
+    animation: input 3s both;
 }
 
-.texto{
+.texto {
     max-width: 580px;
     font-size: 1.3rem;
     color: gray;
@@ -35,7 +48,7 @@ li {
     }
 }
 
-.botones{
+.botones {
     width: 100px;
     height: 60px;
     font-size: 1.3rem;
@@ -47,9 +60,9 @@ li {
 }
 
 @media (min-width:1300px) {
-    .contenedorPrincipal{
+    .contenedorPrincipal {
         max-width: 1300px;
         margin-left: auto;
         margin-right: auto;
-    }    
+    }
 }

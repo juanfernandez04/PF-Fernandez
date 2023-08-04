@@ -14,11 +14,22 @@ li {
   list-style: none;
 }
 
+@keyframes input {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .titulo {
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
   color: #3e3eca;
+  animation: input 3s both;
 }
 
 .texto {
@@ -130,6 +141,7 @@ li {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  width: 100%;
 }
 
 .ejercicios {
